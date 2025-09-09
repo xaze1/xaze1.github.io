@@ -115,6 +115,63 @@ body {
     margin-top: 0.5vw;
 }
 
+/* Badges */
+
+.badges {
+    display: flex;
+    gap: 0.8vw; /* space between badges */
+    background-color: #353535;
+    border-radius: 15px;
+    width: 12.5vw;
+    height: 3.5vw;
+
+    position: absolute;
+    top: 21vw;
+    right: 2.5vw;
+
+    padding: 0.25rem;
+}
+
+.badges .youtube{
+    color: #ff0000;
+}
+
+.badge-icon {
+    position: relative;
+    color: #4c4c4c;
+    width: 1.5vw;
+    height: 1.5vw;
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.user-badge {
+    position: relative;
+    color: #4c4c4c;
+    width: 1.5vw;
+    height: 1.5vw;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 2.5vw;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.user-badge:hover {
+    background-color: #40444b; /* slightly lighter on hover */
+    transform: scale(1.1); /* subtle zoom */
+    cursor: pointer;
+}
+
+.user-badge i {
+    pointer-events: none; /* ensures clicking the icon triggers the link */
+}
+
 /* =======================
    Sections
 ======================= */
