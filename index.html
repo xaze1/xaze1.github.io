@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="source/styles/main.css" rel="stylesheet">
+    <title>Xaze Portfolio</title>
+</head>
+<body>
+    <div class="back">
+        <div class="user">
+            <div class="banner"></div>
+            <div class="avatar-border">
+                <img class="avatar" src="source/images/avatar.png" alt="Avatar">
+            </div>
+            <div class="status">
+                <p>
+                    Let's play Hide and Seek!<br>
+                    I hide and you seek professional help!
+                </p>
+            </div>
+            <h1 class="nickname">Xaze</h1>
+            <p class="username">xaze_</p>
+            <p class="description">
+                The lazy gamer that loves programming random stuff<br>
+            </p>
+        </div>
+
+        <section class="about">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+                I mostly play First-Person-Shooters, like Siege X, Ready Or Not and SCP: Secret Laboratory<br>
+                I love programming, as it's a lot of fun to me. Usually in the Coding Language C#<br>
+                I'm currently studying C# software development
+            </p>
+        </section>
+
+        <section class="projects">
+            <h2 class="sub-title">Projects</h2>
+            <!-- Xaze API -->
+            <div class="project-card">
+                <h3>XazeAPI</h3>
+                <p class="project-description">
+                    My main API that I use for all of my SL Plugins<br>
+                    Gives you generally useful helpers/extensions
+                </p>
+                <a class="project-link" href="https://github.com/xaze1/XazeAPI/releases">Releases</a>
+            </div>
+
+            <!-- Xaze Custom Roles API -->
+            <div class="project-card">
+                <h3>XazeCustomRoles</h3>
+                <p class="project-description">
+                    A Custom Role API for SCP Secret Laboratory
+                </p>
+                <a class="project-link" href="https://github.com/xaze1/XazeCustomRoles/releases">Releases</a>
+            </div>
+
+            <!-- Xaze Custom Effects API -->
+            <div class="project-card">
+                <h3>XazeCustomEffects</h3>
+                <p class="project-description">
+                    Custom Effects API for SCP Secret Laboratory
+                </p>
+                <a class="project-link" href="https://github.com/xaze1/XazeCustomEffects/releases">Releases</a>
+            </div>
+
+            <!-- Call of the Unknown -->
+            <div class="project-card">
+                <h3>Call of the Unknown</h3>
+                <p class="project-description">
+                    A Roblox game I'm currently working on that is supposed to be like Voice of the Void<br>
+                    It has game mechanics that are like a typical Roblox Reactor Core Game and also aspects of Roblox Pressure<br>
+                    As well as other things
+                </p>
+                <a class="project-link" href="https://www.roblox.com/games/90680681448186/Call-of-the-Unknown">Game</a>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="sub-title">Skills</h2>
+            <!-- C# Skills -->
+            <div class="project-card">
+                <h3>C#</h3>
+                <p class="skill-description">
+                    I'm not the best at it. I'm still learning after all<br>
+                    I definitely have most of the basic skills down (At least, I think so)
+                </p>
+            </div>
+
+            <!-- Python Skills -->
+            <div class="project-card">
+                <h3>Python</h3>
+                <p class="skill-description">
+                    I've taught all of it myself, and I'm definitely not the best at it<br>
+                    I mostly used it to make small things, like a Messenger App to use in school,<br>
+                    so I could talk with my friends or a Discord Bot
+                </p>
+            </div>
+
+            <!-- Luau Skills -->
+            <div class="project-card">
+                <h3>Luau(Roblox)</h3>
+                <p class="skill-description">
+                    The only reason I had to learn a bit of this, is because of the Roblox Game I'm making<br>
+                    I'm not great at it, but I've got most of the basics down
+                </p>
+            </div>
+
+            <!-- HTML/CSS Skills -->
+            <div class="project-card">
+                <h3>HTML/CSS</h3>
+                <p class="skill-description">
+                    I made this website using it. It's not a masterpiece, but it works
+                </p>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <h2>Contacts/Socials</h2>
+            <p>
+                E-Mail: xazenoreply@gmail.com<br>
+                Discord: xaze_
+            </p>
+
+            <a class="twitter contact-link clickable" href="https://www.twitter.com/@ProtogenL">
+                <i class="fa-brands fa-twitter"></i>
+                Twitter
+            </a>
+
+            <a class="steam contact-link clickable" href="https://steamcommunity.com/profiles/76561198879970793/">
+                <i class="fa-brands fa-steam"></i>
+                Steam
+            </a>
+
+            <a class="youtube contact-link clickable" href="https://www.youtube.com/@_xaze_">
+                <i class="fa-brands fa-youtube"></i>
+                YouTube
+            </a>
+
+            <a class="ko-fi contact-link clickable" href="https://ko-fi.com/xaze_">
+                <i class="fa-solid fa-mug-saucer"></i>
+                Ko-Fi
+            </a>
+        </section>
+    </div>
+</body>
+<script>
+    const back = document.querySelector('.back');
+
+    back.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        back.scrollBy({
+            top: e.deltaY * 1, // reduce number for slower scroll, increase for faster
+            behavior: 'auto'
+        });
+    });
+</script>
+</html>
